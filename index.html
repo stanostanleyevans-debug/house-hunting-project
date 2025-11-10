@@ -1,4 +1,3 @@
-z
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,19 +7,19 @@ z
     <title>House Hunters</title>
     <style>
         body {
-            background-color: yellowgreen;
+            background-color: #010a0a;
             text-align: center;
         }
 
         .login-box {
-            background-color: plum;
+            background-color: #031d1d;
             text-align: left;
             width: 400px;
             color: crimson;
             margin: 100px auto;
             border-radius: 50px;
             padding: 10px;
-            float:none;
+            float: none;
         }
 
         #input {
@@ -50,19 +49,19 @@ z
             margin-top: 10px;
             font-size: 18px;
             font-weight: bold;
-            
+
         }
     </style>
 </head>
 
 <body>
     <div class="login-box">
-        <b style="font-size: 50px; color: blue;">LOGIN</b>
+        <b style="font-size: 50px; color: white;">LOGIN</b>
         <form id="loginForm">
-            <label for="email" style="color: blueviolet; font-size: 30px;">Email</label><br>
+            <label for="email" style="color: white; font-size: 30px;">Email</label><br>
             <input type="text" id="email" name="Email" placeholder="Enter your email"><br><br>
 
-            <label for="password" style="color: aquamarine; font-size: 30px;">Password</label><br>
+            <label for="password" style="color: white; font-size: 30px;">Password</label><br>
             <input type="password" id="password" name="Password" placeholder="Enter your password"><br><br>
 
             <button type="submit">LOGIN</button>
@@ -75,28 +74,29 @@ z
     </div>
 
     <script>
+        console.log("button clicked")
         document.getElementById("loginForm").addEventListener("submit", function (event) {
             event.preventDefault();
+            console.log("button clicked inside the function")
 
             let email = document.getElementById("email").value.trim();
             let password = document.getElementById("password").value.trim();
             let message = document.getElementById("message");
+            console.log("this is the email from the user ", email)
+            console.log("this is the email from the user", password)
 
-            if (email === "stanostanleyevans@gmail.com" && password === "1234") {
+
+
+            if (email !== '' && password !== '') {
                 message.textContent = " Login successful! Welcome, " + email;
                 message.style.color = "green";
                 alert(" Login successful! Welcome, " + email);
             }
-            else if (email === "stanostanleyevans@gmail.com" && password !== "1234") {
-                message.textContent = " Incorrect password. Try again or click 'Forgot Password'.";
-                message.style.color = "red";
-                alert(" Incorrect password. Try again or click 'Forgot Password'.");
-            }
             else {
-                message.textContent = " Email not recognized. Please register first.";
-                message.style.color = "orange";
-                alert("Email not recognized. Please register first.");
+                alert("please provide an email and password")
             }
+
+
         });
     </script>
 </body>
