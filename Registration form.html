@@ -7,14 +7,14 @@
     <title>Registration Form</title>
     <style>
         body {
-            background-color: blueviolet;
+            background-color: hsl(180, 44%, 26%);
             text-align: center;
             border-radius: 15px;
             padding: 15px;
         }
 
         .Registration-box {
-            background-color: limegreen;
+            background-color: hwb(180 2% 88%);
             margin: auto;
             width: 500px;
             border-radius: 40px;
@@ -27,7 +27,10 @@
             width: 5px;
             text-align: right;
             margin-right: 10px;
-            color: chartreuse;
+            color: white
+        }
+        label{
+            color: white;
         }
 
         #input{
@@ -38,23 +41,24 @@
         }
 
         button {
-            background-color: blue;
-            color: white;
+            background-color: hsl(180, 71%, 7%);
+            color: #b40d74;
             border: none;
             padding: 10px 20px;
-            border-radius: 10px;
+            border-radius: 50px;
             cursor: pointer;
+    
         }
 
         button:hover {
-            background-color: darkblue;
+            background-color: hsl(180, 79%, 4%);
         }
     </style>
 </head>
 
 <body>
-    <h1 style="color: lime;font-size: 50px;border-radius: 30px;">Create New Account</h1>
-    <p style="color: lawngreen;font-size: 40px;border-radius: 5px;">If This Is Your First Time Here</p>
+    <h1 style="color: white;font-size: 20px;border-radius: 0px;">Create New Account</h1>
+    <p style="color: white;font-size: 20px;border-radius: 0px;">If This Is Your First Time Here</p>
     <div class="Registration-box">
         <form id="Registrationform">
             <label for="username">Username</label>
@@ -76,10 +80,11 @@
             <input type="email" id="email" name="EmailAddress" required><br><br>
 
             <button type="submit" id="button">Register Here</button>
+           <a href="homepage.html"><button type="submit" id="button">Back to home</a></button>
         </form>
     </div>
-
-    <script>
+</body>
+ <script>
         document.getElementById("Registrationform").addEventListener("submit", function (event) {
             event.preventDefault();
 
@@ -101,6 +106,4 @@
             alert(`Registration successful!\n\nWelcome, ${firstname} ${lastname}!`);
         });
     </script>
-</body>
-
 </html>

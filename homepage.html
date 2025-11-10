@@ -15,24 +15,37 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
+        height: 0px;
     }
-
-    .logo-box img {
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-    
-    }
-
 
     .navigation {
-        background-color: #f7a224;
+     background-color: rgb(3, 44, 44);
         margin-bottom: 20px;
         padding: 10px;
         display: flex;
         justify-content: space-between;
 
     }
+     .logo-box img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin-left: 50px;
+         
+    
+    }
+      .company-title {
+        
+        color: white;
+        font-size: 20px;
+        font-weight: 700px;
+        margin-right: 0px;
+    }
+    div.style{
+        padding-right: 30px;
+        float: left;
+    }
+
 
 
     .images {
@@ -41,14 +54,26 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-items: center;
-
+        background-color: #042222;
+    }
+    h2{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+    p{
+        text-align: center;
     }
 
     .images img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 200px;
         padding: 12px;
         border-radius: 20px;
+         background-color: #042222;
+         justify-content: space-between;
+         text-align: center;
+         margin-top: 8px
     }
 
     div.links {
@@ -63,15 +88,21 @@
         font-weight: bold;
     }
 
-    footer {
+    .footer {
         text-align: center;
         border-radius: 20px;
-
+        align-items: center;
+        background-color: darkslategray;
+        height: 150px;
     }
     h1{
-        color: rgb(189, 4, 4);
+        color: white;
     }
     p{
+        color: white;
+        
+    }
+    li{
         color: white;
         
     }
@@ -94,8 +125,10 @@
         padding: 10px;
     }
     body{
-        background-color: hsl(165, 79%, 37%);
+        background-color: oklab(44.342% -0.06546 -0.01758);
     }
+    
+    
 
 </style>
 
@@ -106,19 +139,19 @@
         <div class="logo-box">
             <img src="stan.jpg" alt="stan.png">
         </div>
-
+         <div class="company-title">House Hunting Website</div>
+         <div style="font-size:0.85rem;color:rgba(255,255,255,0.8)">Welcome to stanley house-hunting project</div>
         <div class="forms">
             <a href="index.html">Login</a>
             <a href="Registration form.html">Register</a>
+            
         </div>
 
         <div class="links">
             <a href="homepage.html">
                 <div class="div4">HOME</div>
             </a>
-            <a href="about.html">
-                <div>ABOUT</div>
-            </a>
+            <a href="about.html">About</a>
             <a href="contact us.html">
                 <div>CONTACT US</div>
             </a>
@@ -141,49 +174,90 @@
 
         <div>
             <a href="singleroom.html">
-            <img src="singleroom1.jpg" alt="">
-
+            <img src="singleroom5.jpg" alt="">
+            
             
             </a>
-            <h2>singleroom</h2>
-
+            <h2>Single Room</h2>
+            <p>Cozy and private, ideal for students and professionals.</p>
+             <ul>
+                <li>Electricity,water,full security service</li>
+                <li><b>Price: Ksh 4000/month</li></b>
+             </ul>
         </div>
 
 
         <div>
              <a href="bedsitter.html">
-            <img src="bedsitter.jpg" alt="">
+            <img src="Bedsitter7.jpg" alt="">
             </a>
-            <h2>bedsitter</h2>
+            <h2>Bedsitter</h2>
+            <ul>
+                <p>Compact living with everything you need.</p>
+                <Li>Efficient open-plan bedsiter,kitchen included,close market</Li>
+                <li>Well-lit bedsitter with build-in ensuite shower.</li>
+                <li><b>Price: Ksh 6500/month</li></b>
+             </ul>
         </div>
 
 
         <div>
             <a href="1bedroom.html">
-                <img src="1bedroom1.jpg" alt="">
+                <img src="1 Bedroom.jpg" alt="">
             </a>
-            <h2>1bedroom</h2>
+            <h2>1 Bedroom</h2>
+            <p>Perfect for couples or small families.</p>
+              </a>
+            <p>Compact living with everything you need.</p>
+            <ul>
+                <li>Electricity,water,full security service,</li>
+                <li><b>Price: Ksh 8500/month</li></b>
+             </ul>
         </div>
 
 
         <div>
             <a href="2bedroom.html">
-                <img src="2bedroom1.jpg" alt="">
+                <img src="2 Bedroom.jpg" alt="">
             </a>
-            <h2>2bedroom</h2>
+            <h2>2 Bedroom</h2>
+             <p>Extra space for a growing household.</p>
+               </a>
+            <ul>
+                <p>Compact living with everything you need.</p>
+                <li>Family-friendly 2BR with large living area and private blacony.</li>
+                <li>Electricity,water,full security service,</li>
+                <li>Modern duplex 2BR close to schools and parks.</li>
+                <li><b>Price: Ksh 6500/month</li></b>
+             </ul>
         </div>
 
         <div>
             <a href="3bedroom.html">
-                <img src="3bedroom.jpg" alt="">
+                <img src="3 Bedroom.jpg" alt="">
             </a>
-            <h2>3bedroom</h2>
+            <h2>3 Bedroom</h2>
+            <p>Roomy and comfortable for families.</p>
+              </a>
+            <p>Compact living with everything you need.</p>
+            <ul>
+                <li>Electricity,water,full security service,</li>
+                <li><b>Price: Ksh 15000/month</li></b>
+             </ul>
         </div>
         <div>
             <a href="mansion.html">
                 <img src="mansion.jpg" alt="">
             </a>
-            <h2>mansion</h2>
+            <h2><b>Mansion</h2></b>
+             <ul>
+        <p>Luxurious properties for premium living.</p>
+        <li>electricity,VPN,strongsecurity</li>
+<li>Expensive estate with pool,guest houses and landscape garden</li>
+<li>Luxuxy villa modern amenities and private security</li>
+<li><b>Price: Ksh 4000000 /month</li></b>
+    </ul>
+    </div>
         </div>
         <div>
             <div>
@@ -191,16 +265,14 @@
                 </a>
                 </div>
         </div>
-        <div>
     </div>
+    <div class="footer">
     <footer>
-        <h1>cotact us</h1>
-        <p>through 0791204465</p>
-        <h1>OR</h1>
-        <p>through email stan@1234</p>
+        <h1><B>Contact Us</h1></B>
+        <p>Phone:0791204465 | Email stan@1234</p>
 
     </footer>
-    
+    </div>
   
 </body>
  
