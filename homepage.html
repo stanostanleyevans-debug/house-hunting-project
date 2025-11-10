@@ -105,7 +105,44 @@
     li{
         color: white;
         
+        
     }
+     .card {
+           
+           
+            border-radius: 14px;
+            background-color: #2a7070;
+            backdrop-filter: blur(6px);
+            box-shadow:  0 10px 25px rgba(2, 6, 23, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+     @keyframes floaty {
+            0% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-6px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+   .card .img-wrap {
+            animation: floaty 6s ease-in-out infinite
+        }
+    
+ .img-wrap{
+     width: 100%;
+   
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative
+ }
 
     .search input {
         width: 500px;
@@ -172,8 +209,8 @@
     <div class="images">
 
 
-        <div>
-            <a href="singleroom.html">
+        <div  class="card">
+            <a class="img-wrap" href="singleroom.html">
             <img src="singleroom5.jpg" alt="">
             
             
@@ -187,8 +224,8 @@
         </div>
 
 
-        <div>
-             <a href="bedsitter.html">
+        <div   class="card">
+             <a  class="img-wrap" href="bedsitter.html">
             <img src="Bedsitter7.jpg" alt="">
             </a>
             <h2>Bedsitter</h2>
@@ -201,8 +238,8 @@
         </div>
 
 
-        <div>
-            <a href="1bedroom.html">
+        <div class="card">
+            <a   class="img-wrap" href="1bedroom.html">
                 <img src="1 Bedroom.jpg" alt="">
             </a>
             <h2>1 Bedroom</h2>
@@ -216,8 +253,8 @@
         </div>
 
 
-        <div>
-            <a href="2bedroom.html">
+        <div class="card">
+            <a  class="img-wrap" href="2bedroom.html">
                 <img src="2 Bedroom.jpg" alt="">
             </a>
             <h2>2 Bedroom</h2>
@@ -232,8 +269,8 @@
              </ul>
         </div>
 
-        <div>
-            <a href="3bedroom.html">
+        <div class="card">
+            <a  class="img-wrap" href="3bedroom.html">
                 <img src="3 Bedroom.jpg" alt="">
             </a>
             <h2>3 Bedroom</h2>
@@ -245,8 +282,8 @@
                 <li><b>Price: Ksh 15000/month</li></b>
              </ul>
         </div>
-        <div>
-            <a href="mansion.html">
+        <div class="card">
+            <a   class="img-wrap" href="mansion.html">
                 <img src="mansion.jpg" alt="">
             </a>
             <h2><b>Mansion</h2></b>
@@ -259,6 +296,9 @@
     </ul>
     </div>
         </div>
+
+
+        
         <div>
             <div>
             <a href="Search-results.html">
